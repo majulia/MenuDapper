@@ -30,7 +30,7 @@ namespace MenuWebAPI.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPost("PostProdutos")]
         public void Post(Produto produto)
         {
             try
@@ -43,7 +43,7 @@ namespace MenuWebAPI.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("PutProdutos")]
         public void Update(Produto produto)
         {
             try
@@ -56,7 +56,7 @@ namespace MenuWebAPI.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("DeleteProdutos")]
         public void Delete(int id)
         {
             try
