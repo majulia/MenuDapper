@@ -6,7 +6,7 @@ namespace MenuWebAPI.Data.Interface
     {
         List<Produto> GetProduto();
         void PostProduto(Produto produto);
-        void UpdateProduto(Produto produto, int id);
+        void UpdateProduto(Produto produto);
         void DeleteProduto(int id);
     }
 }

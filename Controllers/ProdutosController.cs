@@ -44,11 +44,11 @@ namespace MenuWebAPI.Controllers
         }
 
         [HttpPut]
-        public void Update(Produto produto, int id)
+        public void Update(Produto produto)
         {
             try
             {
-                _repo.UpdateProduto(produto, id);
+                _repo.UpdateProduto(produto);
             }
             catch (Exception)
             {

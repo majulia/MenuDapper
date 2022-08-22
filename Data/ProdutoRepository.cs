@@ -44,7 +44,7 @@ namespace MenuWebAPI.Data
 
         }
 
-        public void UpdateProduto(Produto produto, int id)
+        public void UpdateProduto(Produto produto)
         {
             using (IDbConnection connection = _dbSession.Connection)
             {
@@ -52,7 +52,7 @@ namespace MenuWebAPI.Data
                                 where pro_id = @id;";
 
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@id", id);
+                parameters.Add("@id", produto.Id);
                 parameters.Add("@nome", produto.Nome);
                 parameters.Add("@tipo", produto.Tipo);
                 parameters.Add("@preco", produto.Preco);
