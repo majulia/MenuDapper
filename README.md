@@ -26,5 +26,5 @@ Software para realizar requisições HTTP (Insomnia, Postman...)
 - /api/Produtos/GetProdutos : Retorna todos os produtos ativos 
 - /api/Produtos/PostProdutos : Cadastra novos produtos no banco
 - /api/Produtos/PutProdutos : Atualiza produtos no banco
-- /api/Produtos/DeleteProdutos : Exclui um produto existente usando o id como parametros
+- /api/Produtos/DeleteProdutos : Exclui um produto existente usando o id como parametro
 
