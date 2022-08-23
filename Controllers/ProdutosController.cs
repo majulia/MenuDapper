@@ -2,6 +2,7 @@
 using MenuWebAPI.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace MenuWebAPI.Controllers
 {
@@ -25,7 +26,6 @@ namespace MenuWebAPI.Controllers
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -39,7 +39,7 @@ namespace MenuWebAPI.Controllers
             }
             catch (Exception)
             {
-                throw;
+                StatusCode((int)HttpStatusCode.InternalServerError, "Ocorreu um erro");
             }
         }
 
@@ -52,7 +52,7 @@ namespace MenuWebAPI.Controllers
             }
             catch (Exception)
             {
-                throw;
+                StatusCode((int)HttpStatusCode.InternalServerError, "Ocorreu um erro");
             }
         }
 
@@ -65,7 +65,7 @@ namespace MenuWebAPI.Controllers
             }
             catch (Exception)
             {
-                throw;
+                StatusCode((int)HttpStatusCode.InternalServerError, "Ocorreu um erro");
             }
         }
     }
